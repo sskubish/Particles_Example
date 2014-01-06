@@ -10,7 +10,9 @@ class Particle {
     hue = random(360);
   }
   void display(float x, float y) {
-    ellipse(x, y, size, size);
+    ellipse(loc.x, loc.y, size, size);
+    
+    
   }
   void move() {
     loc.add(vel);
